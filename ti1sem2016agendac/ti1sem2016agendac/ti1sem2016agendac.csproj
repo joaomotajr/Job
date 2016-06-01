@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6F0A4DCB-4173-4F6E-AC7B-646954CBB1C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ti1sem2016agendac</RootNamespace>
+    <AssemblyName>ti1sem2016agendac</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Installer for Windows\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="tela_agendamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_agendamento.Designer.cs">
+      <DependentUpon>tela_agendamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_cadastroCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_cadastroCliente.Designer.cs">
+      <DependentUpon>tela_cadastroCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_menu.Designer.cs">
+      <DependentUpon>tela_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_consulta.Designer.cs">
+      <DependentUpon>tela_consulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tela_produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_produto.Designer.cs">
+      <DependentUpon>tela_produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_serviço.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_serviço.Designer.cs">
+      <DependentUpon>tela_serviço.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_splash.Designer.cs">
+      <DependentUpon>tela_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tela_venda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tela_venda.Designer.cs">
+      <DependentUpon>tela_venda.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="tela_agendamento.resx">
+      <DependentUpon>tela_agendamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_cadastroCliente.resx">
+      <DependentUpon>tela_cadastroCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_menu.resx">
+      <DependentUpon>tela_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_consulta.resx">
+      <DependentUpon>tela_consulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tela_produto.resx">
+      <DependentUpon>tela_produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_serviço.resx">
+      <DependentUpon>tela_serviço.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_splash.resx">
+      <DependentUpon>tela_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tela_venda.resx">
+      <DependentUpon>tela_venda.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
