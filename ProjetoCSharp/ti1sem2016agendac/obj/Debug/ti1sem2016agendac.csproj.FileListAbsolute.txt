@@ -33,3 +33,4 @@ C:\SoftWare\Junior\PROJETOS\Job\ti1sem2016agendac\ti1sem2016agendac\obj\Debug\ti
 C:\SoftWare\Junior\PROJETOS\Job\ti1sem2016agendac\ti1sem2016agendac\obj\Debug\ti1sem2016agendac.tela_splash.resources
 C:\SoftWare\Junior\PROJETOS\Job\ti1sem2016agendac\ti1sem2016agendac\obj\Debug\ti1sem2016agendac.tela_venda.resources
 C:\SoftWare\Junior\PROJETOS\Job\ti1sem2016agendac\ti1sem2016agendac\obj\Debug\ti1sem2016agendac.csproj.GenerateResource.Cache
+C:\SoftWare\Junior\PROJETOS\Job\trunk\ProjetoCSharp\ti1sem2016agendac\bin\Debug\ti1sem2016agendac.exe.config

@@ -8,6 +8,7 @@ namespace ti1sem2016agendac
 {
     static class Program
     {
+        /// Joao Junior
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
